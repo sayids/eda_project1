@@ -1,4 +1,4 @@
-# Exploratory Data Analysis project 1 plot
+# Exploratory Data Analysis project 1 plot 1
 
 download_data = function() {
     "Downloading and unpacking datafile"
@@ -33,7 +33,9 @@ plotting_data = function(df) {
     "Plotting converted data"
     message("Making plot...")
     global_active_power <- as.numeric(df$Global_active_power)
+    # histogram
     hist(global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
+    # now in png
     dev.copy(png, file="plot1.png", height=480, width=480)
     dev.off()
 }
