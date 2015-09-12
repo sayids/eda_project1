@@ -48,6 +48,7 @@ plotting_data = function(df) {
     plot(datetime, sub_metering1, type="l", ylab="Energy Submetering", xlab="")
     lines(datetime, sub_metering2, type="l", col="red")
     lines(datetime, sub_metering3, type="l", col="blue")
+    legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=, lwd=2.5, col=c("black", "red", "blue"), bty="o")
     legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, lwd=2.5, col=c("black", "red", "blue"))
     # reactive
     plot(datetime, global_reactive_power, type="l", xlab="datetime", ylab="Global_reactive_power")
